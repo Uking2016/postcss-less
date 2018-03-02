@@ -1,0 +1,416 @@
+//·þÎñ±£ÕÏ
+.service{
+  margin: 1rem 0;
+  & > div{
+    background-color: #fff;
+    font-size: 1rem;
+  }
+  .top{
+    font-size: .875rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    border-bottom: none;
+    text-align: center;
+    color: #41250c;
+  }
+  .content{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    font-size: .9375rem;
+    li{
+      padding: .6875rem .625rem;
+    }
+    .left{
+      width: 3.4375rem;
+      margin-right: 1rem;
+      img{
+        width: 100%;
+      }
+    }
+    .auto{
+      h5{
+        color: #41250c;
+        font-size: .9375rem;
+      }
+      p{
+        text-align: justify;
+        span{
+          color: #ff2d2d;
+        }
+      }
+    }
+  }
+}
+
+.pay-header {
+  @h: 88/@r;
+  height: @h;
+  background: #a6937c;
+  .left, .right {
+    width: (@unitWidth*2 + 22)/@r;
+    height: @h;
+  }
+  .left {
+    background: url('@{IMAGE_PATH}bgBack.png@{VERSION}') no-repeat center;
+    -webkit-background-size: 22/@r 37/@r;
+    background-size: 22/@r 37/@r;
+  }
+  .auto {
+    line-height: @h;
+    text-align: center;
+    color: #fff;
+    font-size: 34/@r;
+  }
+}
+
+.fortune-banner {
+  img {
+    width: 100%;
+  }
+}
+
+.fortune-info {
+  padding: @unitWidth/2/@r @unitWidth/@r;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #e23e3e;
+  margin-bottom: 24/@r;
+}
+
+.fortune-item {
+  @h: 52;
+  font-size: 28/@r;
+  line-height: @h/@r;
+  .color-red {
+    color: #ef5946;
+  }
+  .visibility-hidden {
+    visibility: hidden;
+  }
+}
+
+.select-box {
+  @h: 52;
+  padding: 4/@r;
+  .br( 8/@r );
+  border: 1px solid #ccc;
+  font-size: 28/@r;
+  line-height: 52/@r;
+  margin-bottom: @unitWidth/@r;
+  & > .auto {
+    text-align: center;
+  }
+  & > .right {
+    width: 52/@r;
+    height: 52/@r;
+    background: #e0e0e0 url( '@{IMAGE_PATH}bgSelectToggle.png@{VERSION}' ) no-repeat center;
+    -webkit-background-size: 24/@r 12/@r;
+    background-size: 24/@r 12/@r;
+    .br( 8/@r );
+  }
+}
+
+.price-box {
+  text-align: right;
+  line-height: 90/@r;
+  font-size: 32/@r;
+  .final-price {
+    color: yellow;
+  }
+  .origin-price {
+    color: #ffa3a3;
+    text-decoration: line-through;
+    margin-left: 8/@r;
+  }
+}
+
+/*.pay-type {
+  margin: @unitWidth/@r 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  .pay-title {
+    line-height:85/@r;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 32/@r;
+  }
+  .pay-body {
+    @h: 85;
+    padding: @unitWidth/2/@r @unitWidth/@r;
+    & > li {
+      height: @h/@r;
+      line-height: @h/@r;
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+      &.active {
+        .pay-radio {
+          background: #61b102 url('@{IMAGE_PATH}bgIconRadioSelect.png@{VERSION}') no-repeat center;
+          .bgs( 28/@r 22/@r );
+        }
+      }
+    }
+    .pay-icon {
+      display: inline-block;
+      vertical-align: top;
+      width: 100/@r;
+      height: @h/@r;
+    }
+    .auto {
+      font-size: 26/@r;
+      color: #666;
+    }
+    .right {
+      width: @h/@r;
+      height: @h/@r;
+    }
+    .pay-radio {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      width: 53/@r;
+      height: 53/@r;
+      .br( 50% );
+      border: 1px solid #ccc;
+    }
+    .icon-alipay {
+      background: transparent url('@{IMAGE_PATH}bgIconAlipay.png@{VERSION}') left center no-repeat;
+      .bgs( 54/@r 52/@r );
+    }
+    .icon-wechat {
+      background: transparent url('@{IMAGE_PATH}bgIconWechat.png@{VERSION}') left center no-repeat;
+      .bgs( 66/@r 62/@r );
+    }
+    .icon-union {
+      background: transparent url('@{IMAGE_PATH}bgIconUnion.png@{VERSION}') left center no-repeat;
+      .bgs( 64/@r 40/@r );
+    }
+    .icon-paypal {
+      background: transparent url('@{IMAGE_PATH}bgIconPaypal.png@{VERSION}') left center no-repeat;
+      .bgs( 66/@r 55/@r );
+    }
+  }
+}*/
+
+.pay-confirm {
+  height: 73/@r;
+  line-height: 73/@r;
+  background: #ef5946;
+  font-size: 32/@r;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin: @unitWidth/2/@r @unitWidth/@r;
+  .br( 8/@r );
+}
+
+//xiaoenai
+.pay-title {
+  line-height:85/@r;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 32/@r;
+  background: #fff;
+}
+.pay-desc{
+  font-size: .875rem;
+  margin: .75rem;
+  p{
+    text-indent: 1.75rem;
+    span{
+      color: #a90101;
+    }
+  }
+}
+.pay-list {
+  padding: .5rem 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  li {
+    height: 2.875rem;
+    margin: 0 .5rem .5rem .5rem;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+    color: #fff;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .br(.5rem);
+    .right {
+      height: 2.875rem;
+      font-size: .875rem;
+      line-height: 2.875rem;
+    }
+    .icon {
+      display: inline-block;
+      width: .4375rem;
+      height: .75rem;
+      margin-left: .5rem;
+      background: transparent url("@{IMAGE_PATH}payGo.png") no-repeat center;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+    }
+    a {
+      display: block;
+      color: #fff;
+    }
+  }
+  .pay-name {
+    & > span {
+      vertical-align: middle;
+    }
+    .br(.25rem);
+  }
+  .pay-img {
+    display: inline-block;
+    height: 2.875rem;
+    width: 2.9375rem;
+    margin-right: .5rem;
+    .br(.25rem);
+  }
+}
+
+.common-style( @borderColor, @bgColor, @img) {
+  border: 1px solid @borderColor;
+  background: @bgColor;
+  .pay-img {
+    background: transparent url("@{IMAGE_PATH}@{img}") no-repeat center;
+    -webkit-background-size: 100% 1.875rem;
+    background-size: 100% 1.875rem;
+  }
+}
+
+.alipay-style {
+  .common-style(#d45602, #ff6600, "bgAlipay.jpg");
+}
+
+.wechat-style {
+  .common-style(#00ac01, #00bc01, "bgWechat.jpg");
+}
+
+.union-style {
+  .common-style(#15487b, #15487b, "bgUnion.jpg");
+}
+
+.paypal-style {
+  .common-style(#ab7d00, #dba000, "bgPaypal.jpg")
+}
+
+
+
+.xiaoenai{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(255,255,255,1);
+  z-index: 99;
+  .content{
+    .br(.25rem);
+    background-color: #fff;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+  }
+  .close{
+    width: 0.9375rem;
+    height: 0.9375rem;
+    background: transparent url("@{IMAGE_PATH}bgClose.png") no-repeat center;
+    .bgs(100% 100%);
+    position: absolute;
+    top: -7.5rem;
+    right: -1rem;
+  }
+  .logo{
+    margin: 2rem auto 2rem;
+    width: 40%;
+    .br(.25rem);
+    img{
+      width: 100%;
+    }
+  }
+  .tips{
+    text-align: center;
+    color:#e38cb0;
+    margin-bottom: 1rem;
+    .box{
+      width: 6rem;
+      margin: 0 auto;
+    }
+    #wait{
+      width: 1rem;
+      padding-top: 0.1rem;
+    }
+  }
+  .dec{
+    color: #a9a9a9;
+    font-size: .875rem;
+    text-align: justify;
+    margin-bottom: 4rem;
+    p{
+      padding-bottom: .2rem;
+    }
+  }
+  .btn{
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    background-color: #e38cb0;;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    .br(.25rem);
+    color: #fff;
+    text-align: center;
+  }
+  .finish{
+    background-color: #fff;
+    color: #e38cb0;;
+    border: 1px solid #e38cb0;;
+  }
+}
+
+.orders-scroll{
+  margin : .75rem 0;
+  h3{
+    width: 100%;
+    line-height: 2.65625rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    background: #fff;
+  }
+  .marquee-wrapper{
+    border-bottom: 1px solid #ccc;
+    height: 10rem;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    ul{
+      position: absolute;
+      top: 0;
+    }
+    li{
+      border-bottom: 1px solid #eac688;
+      padding: .625rem 0;
+      margin: 0 .75rem;
+      font-size: .875rem;
+      line-height: 1.1875rem;
+      color: #292929;
+      h4{
+        color: #770505;
+        font-size: .875rem;
+      }
+    }
+  }
+}
